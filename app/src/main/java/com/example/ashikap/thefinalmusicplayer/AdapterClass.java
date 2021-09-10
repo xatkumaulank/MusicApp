@@ -29,7 +29,7 @@ public class AdapterClass extends ArrayAdapter<SongObject> {
         view= LayoutInflater.from(cxt).inflate(res,parent,false);
 
         //Initializing TextView
-        TextView fileName=(TextView)view.findViewById(R.id.textSong);
+        TextView fileName=view.findViewById(R.id.textSong);
 
         SongObject sdOb=list.get(position);
         //Setting the Icon and FileName
