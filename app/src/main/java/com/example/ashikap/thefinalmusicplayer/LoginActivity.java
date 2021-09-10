@@ -21,10 +21,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         db = new DatabaseHelper(this);
-        eUsername = (EditText) findViewById(R.id.eUsername);
-        ePassword = (EditText) findViewById(R.id.ePassword);
-        bLogin = (Button) findViewById(R.id.bLogin);
-        tRegisterLink = (TextView) findViewById(R.id.tRegisterLink);
+        eUsername =  findViewById(R.id.eUsername);
+        ePassword =  findViewById(R.id.ePassword);
+        bLogin =  findViewById(R.id.bLogin);
+        tRegisterLink =  findViewById(R.id.tRegisterLink);
         bLogin.setOnClickListener( this);
         tRegisterLink.setOnClickListener(this);
 
