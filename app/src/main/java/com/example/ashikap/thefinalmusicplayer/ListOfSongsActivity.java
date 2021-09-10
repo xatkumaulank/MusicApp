@@ -39,7 +39,6 @@ public class ListOfSongsActivity extends AppCompatActivity {
     String path;
     static String absolutePath, songName;
     public static boolean playing = false;
-    public static  String EXTRA_MESSAGE = "com.example.ashikap.myapplication5.MESSAGE";
 
 
     private BroadcastReceiver receiver = new BroadcastReceiver() {
@@ -69,10 +68,10 @@ public class ListOfSongsActivity extends AppCompatActivity {
 
     void initViews(){
         //initializing views
-        btnPlayStop = (Button)findViewById(R.id.btnPlayStop);
-        txtSongName = (TextView)findViewById(R.id.txtSongName);
-        cardView = (CardView)findViewById(R.id.cardView);
-        listview=(ListView)findViewById(R.id.listView);
+        btnPlayStop = findViewById(R.id.btnPlayStop);
+        txtSongName = findViewById(R.id.txtSongName);
+        cardView = findViewById(R.id.cardView);
+        listview=findViewById(R.id.listView);
         listOfContents = new ArrayList<>();
 
         //If music is playing already on starting the app, player should be visible with Stop button
