@@ -19,13 +19,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);  db = new DatabaseHelper(this);
-        eName = (EditText) findViewById(R.id.eName);
-        eMobile = (EditText) findViewById(R.id.eMobile);
-        eUsername = (EditText) findViewById(R.id.eUsername);
-        ePassword = (EditText) findViewById(R.id.ePassword);
-        bRegister = (Button) findViewById(R.id.bRegister);
-        //tvnext=(TextView)findViewById(R.id.tvnext) ;
-        // tvnext.setOnClickListener(this);
+        eName =  findViewById(R.id.eName);
+        eMobile =  findViewById(R.id.eMobile);
+        eUsername =  findViewById(R.id.eUsername);
+        ePassword =  findViewById(R.id.ePassword);
+        bRegister =  findViewById(R.id.bRegister);
+        
 
         bRegister.setOnClickListener(this);
 
